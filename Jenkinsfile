@@ -4,7 +4,7 @@ pipeline {
     stage("build") {
       steps {
         sh """
-          docker build -t ola-unicamp .
+           docker build --no-cache -t ola-unicamp .
         """
       }
     }
